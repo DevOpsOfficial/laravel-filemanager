@@ -81,7 +81,8 @@ class LfmPath
         } else {
             // absolute: /var/www/html/project/storage/app/files/{user_slug}
             // absolute on windows: C:\project\storage\app\files\{user_slug}
-            return $this->storage->rootPath() . $this->path('storage');
+            // return $this->storage->rootPath() . $this->path('storage');
+            return $this->storage->rootPath();
         }
     }
 
